@@ -16,7 +16,7 @@ public class EventLogElement implements Comparable<EventLogElement> {
     private String timestamp;//format : 2012-04-03 07:55:38
     private String activityName;
 
-    public EventLogElement(String caseId, String timestamp, String activityName) {
+    public EventLogElement(String activityName, String caseId, String timestamp) {
         this.caseId = caseId;
         this.timestamp = timestamp;
         this.activityName = activityName;
@@ -38,6 +38,6 @@ public class EventLogElement implements Comparable<EventLogElement> {
             Date date2 = o.getTimestamp();
             return date1.compareTo(date2);
         }
-        return this.caseId.compareTo(o.caseId);
+        return Integer.valueOf(this.caseId).compareTo(Integer.valueOf(o.caseId));
     }
 }

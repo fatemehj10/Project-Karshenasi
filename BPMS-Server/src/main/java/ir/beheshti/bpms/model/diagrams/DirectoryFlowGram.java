@@ -1,9 +1,7 @@
 package ir.beheshti.bpms.model.diagrams;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -14,6 +12,7 @@ import java.util.List;
 @Setter
 //**************//
 
+@Component
 public class DirectoryFlowGram {
     private List<DirectoryFlowGramEdge> flowchart;
 

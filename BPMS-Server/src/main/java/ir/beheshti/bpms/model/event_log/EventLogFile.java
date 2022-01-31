@@ -13,11 +13,12 @@ import java.util.List;
 //**************//
 
 public class EventLogFile {
-    private final String path;
+    private String path;
+    private List<String> headersName;
     private List<EventLogElement> csvRecordsList;
-    private DirectoryFlowGram directoryFlowgram;
+    private DirectoryFlowGram directoryFlowGram;
 
-    public EventLogFile(String path) throws IOException {
+    public EventLogFile(String path) {
         this.path = path;
     }
 }

@@ -12,6 +12,7 @@ import java.util.Objects;
 
 public class DirectoryFlowGramNode {
     private String name;
+    private int index;
 
     public DirectoryFlowGramNode(String name) {
         this.name = name;
